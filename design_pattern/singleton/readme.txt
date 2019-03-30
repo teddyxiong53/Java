@@ -1,24 +1,24 @@
-����ģʽ���𲽷�����
+单例模式的逐步分析。
 Singleton1.java.bak
-�������򵥻����ĵ�����
-���Ǵ������⣺
-	1��û���̰߳�ȫ�������ڶ��̻߳����£�һ�������⡣
-�������ǸĽ�ΪSingleton2.java.bak
+这个是最简单基础的单例。
+但是存在问题：
+	1）没有线程安全保护。在多线程环境下，一定出问题。
+于是我们改进为Singleton2.java.bak
 
 Singleton2.java.bak
-��1�Ļ���������Щ��
-	1����getInstance������synchronized����
-		���ֱ����ס��������Ҳ��̫���ʣ���ʵֻ�е�һ�δ�������ʱҪ������
-		���Կ��԰����ķ�Χ��С����С�������ڲ���
-	2����ʹ��С�������ڲ������ǿ��������⡣
-		java�ﴴ������͸�ֵ�Ƿֿ��ġ�instance = new Singleton()
-		����JVM����֤��2���������Ⱥ�˳��
-		jvm����������п���û�����ϳ�ʼ����������ݡ�
+在1的基础上做这些：
+	1）在getInstance函数加synchronized锁。
+		这个直接锁住整个函数也不太合适，其实只有第一次创建对象时要上锁。
+		所以可以把锁的范围缩小。缩小到函数内部。
+	2）即使缩小到函数内部，还是可能有问题。
+		java里创建对象和赋值是分开的。instance = new Singleton()
+		而且JVM不保证这2个操作的先后顺序。
+		jvm创建对象后，有可能没有马上初始化对象的内容。
 		
-��2�Ļ����ϣ��ٸĽ���3��һ���ȽϺõĵ�����
+在2的基础上，再改进，3是一个比较好的单例。
 Singleton3.java.bak
-���ʹ���ڲ�����ά��������ʵ�֡�
-jvm���ڲ����Ʊ�֤��һ���౻���ص�ʱ�������ļ��ع������̻߳���ġ�
+这个使用内部类来维护单例的实现。
+jvm的内部机制保证当一个类被加载的时候，这个类的加载过程是线程互斥的。
 
 
 

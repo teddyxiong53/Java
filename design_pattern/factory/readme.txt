@@ -1,5 +1,5 @@
-ÂÞÁÐÁË3ÖÖ¹¤³§·½·¨£º
-1¡¢Ö»ÓÐÒ»¸öproduce·½·¨£¬Í¨¹ý´«µÝ²ÎÊý½øÈ¥À´ÅÐ¶Ï²úÉúÄÄÖÖSender¡£
-2¡¢ÓÐ2¸ö·½·¨£ºproduceMailºÍproduceSms¡£Ã»ÓÐ²ÎÊý¡£
-3¡¢ÔÚ2µÄ»ù´¡ÉÏ¸Ä½ø£¬°ÑSendFactoryÀïµÄ·½·¨¶¨ÒåÎª¾²Ì¬µÄ¡£ÕâÖÖ×î³£ÓÃ¡£
+ç½—åˆ—äº†3ç§å·¥åŽ‚æ–¹æ³•ï¼š
+1ã€åªæœ‰ä¸€ä¸ªproduceæ–¹æ³•ï¼Œé€šè¿‡ä¼ é€’å‚æ•°è¿›åŽ»æ¥åˆ¤æ–­äº§ç”Ÿå“ªç§Senderã€‚
+2ã€æœ‰2ä¸ªæ–¹æ³•ï¼šproduceMailå’ŒproduceSmsã€‚æ²¡æœ‰å‚æ•°ã€‚
+3ã€åœ¨2çš„åŸºç¡€ä¸Šæ”¹è¿›ï¼ŒæŠŠSendFactoryé‡Œçš„æ–¹æ³•å®šä¹‰ä¸ºé™æ€çš„ã€‚è¿™ç§æœ€å¸¸ç”¨ã€‚
 
